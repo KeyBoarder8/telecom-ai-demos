@@ -12,3 +12,57 @@
 @media(max-width:1250px){.topbar{grid-template-columns:1fr 340px auto}.environment,.grid-button{display:none}.assistant-layout{grid-template-columns:290px 1fr}.citation-panel{display:none}.service-layout{grid-template-columns:240px 1fr}.copilot-panel{display:none}.order-layout{grid-template-columns:270px 1fr}.dispatch-panel{display:none}.dashboard-layout{grid-template-columns:1fr 1fr}.dashboard-layout .wide{grid-column:auto}}
 @media(max-width:900px){.app-shell,.app-shell.collapsed{grid-template-columns:70px 1fr}.sidebar,.collapsed .sidebar{width:70px}.sidebar span,.brand-name,.sidebar em,.sidebar-art{display:none}.topbar{grid-template-columns:1fr auto}.global-search{display:none}.product-name strong{font-size:15px}.metric-grid{grid-template-columns:1fr 1fr}.knowledge-layout{grid-template-columns:1fr}.assistant-layout,.service-layout,.order-layout{grid-template-columns:1fr;height:auto}.session-list{display:none}.conversation-panel{min-height:480px}.order-summary{display:block}.quality-layout{grid-template-columns:1fr}}
 @media(max-width:620px){.page-content{padding:10px}.product-name strong{font-size:13px}.role{display:none}.metric-grid,.dashboard-layout,.service-kpis{grid-template-columns:1fr}.assistant-summary ul{display:none}.page-header{display:block}.page-actions{margin-top:8px}.order-title{height:auto;align-items:flex-start}.process-steps b{display:none}.toast{left:10px;right:10px;min-width:0}}
+
+/* Blue-white enterprise theme */
+:root{color:#253242;background:#f3f6f9;--bg:#f3f6f9;--surface:#fff;--surface-2:#f7f9fc;--surface-3:#eef4fb;--line:#dce4ed;--line-soft:#e9eef4;--text:#253242;--muted:#73808f;--blue:#1677d2;--blue-2:#0d5fae;--green:#139b72;--amber:#c98613;--red:#d64545;--purple:#6c63bd}
+html,body,#app{background:#f3f6f9;color:#253242}
+.app-shell{background:#f3f6f9;grid-template-columns:224px minmax(0,1fr)}
+.app-shell.collapsed{grid-template-columns:70px minmax(0,1fr)}
+.sidebar{width:224px;background:#07549a;border-right:0;box-shadow:2px 0 8px rgba(25,55,85,.08)}
+.collapsed .sidebar{width:70px}
+.brand{height:64px;padding:0 17px;border-bottom:1px solid rgba(255,255,255,.16)}
+.telecom-logo{display:block;width:150px;height:50px;object-fit:contain;object-position:left center;flex:0 0 auto}
+.collapsed .telecom-logo{width:38px;object-fit:cover;object-position:left center}
+.telecom-symbol,.brand-name,.sidebar-art{display:none!important}
+.main-nav{padding:14px 10px;gap:4px}
+.main-nav button{height:44px;border:0;background:transparent;color:rgba(255,255,255,.78);border-radius:4px;padding:0 13px;gap:12px;font-size:13px}
+.main-nav button:hover{background:rgba(255,255,255,.1);color:#fff}
+.main-nav button.active{background:#fff;color:#07549a;box-shadow:none;font-weight:600}
+.main-nav em{background:#e95050}
+.sidebar footer{background:#07549a;border-top:1px solid rgba(255,255,255,.16);padding:10px}
+.sidebar footer button{height:40px;border:0;background:transparent;color:rgba(255,255,255,.76);display:flex;align-items:center;gap:12px;padding:0 13px;font-size:12px}
+.sidebar footer button:hover{background:rgba(255,255,255,.1);color:#fff}
+.topbar{height:64px;background:#fff;border-bottom:1px solid #dfe6ee;box-shadow:0 1px 4px rgba(31,55,78,.05);grid-template-columns:minmax(300px,1fr) minmax(260px,420px) auto;color:#253242}
+.product-name span{background:#d8e0e8}.product-name strong{font-size:17px;color:#1d2b3a;font-weight:600}
+.global-search{height:36px;border:1px solid #d4dde7;background:#f7f9fb;border-radius:4px;color:#8793a0}
+.global-search input{color:#253242}.global-search input::placeholder{color:#9aa5b1}.global-search kbd{border:1px solid #d8e0e8;background:#fff;color:#7c8794}
+.icon-button,.grid-button,.role{color:#566474}.role{border:1px solid #d8e0e8;border-radius:4px;background:#fff}
+.avatar{background:#e9f3fd;color:#0868bd}.environment{border:1px solid #f0d39a;background:#fff8e7;color:#9c6710;border-radius:3px}
+.page-content{padding:18px 20px 40px}.page-header{min-height:64px;margin-bottom:12px}.page-header small{color:#1677d2}.page-header h1{font-size:20px;color:#1f2d3d;margin:3px 0}.page-header p{color:#768391}
+.button{border-radius:4px}.button.primary{background:#1677d2;border:1px solid #1677d2;color:#fff}.button.primary:hover{background:#0e68bd}.button.secondary{background:#fff;border:1px solid #cfd9e4;color:#405267}.button.secondary:hover{background:#f5f8fb}
+.text-button,.square-button{border:1px solid #d2dce6;background:#fff;color:#516274;border-radius:4px}
+.metric-grid{gap:12px;margin-bottom:12px}.metric-card{height:102px;background:#fff;border:1px solid #e0e7ef;border-radius:5px;padding:16px;box-shadow:0 1px 3px rgba(30,55,80,.04)}
+.metric-icon{width:42px;height:42px;border-radius:6px;background:#eaf4fe;color:#1677d2}.metric-icon.green{background:#e8f7f2;color:#159b73}.metric-icon.amber{background:#fff5df;color:#c98613}.metric-icon.purple{background:#f0eefb;color:#6c63bd}
+.metric-card small{color:#6d7a88}.metric-card strong{color:#202f40;font-size:24px}.metric-card em{color:#159b73}.mini-bars{opacity:.35}.mini-bars b{background:#1677d2}
+.panel{background:#fff;border:1px solid #dfe6ee;border-radius:5px;box-shadow:0 1px 3px rgba(30,55,80,.04)}
+.panel>header{border-bottom:1px solid #e7ecf2;padding:10px 14px}.panel>header h2{color:#253242;font-size:13px}.panel>header p{color:#84909d}
+.dashboard-layout{gap:12px}.alert-list button{border-bottom:1px solid #edf1f5;color:#344354}.alert-list button:hover{background:#f7f9fc}.alert-list button>i{background:#eaf4fe;color:#1677d2}.alert-list button>i.danger{background:#fdecec;color:#d64545}.alert-list button>i.warning{background:#fff4df;color:#c98613}.alert-list small{color:#7d8996}
+.space-list button{color:#344354;border-bottom-color:#edf1f5}.space-list button.active,.space-list button:hover{background:#edf6ff;border-color:#b9d9f6}.space-list button>i{background:#e7f3fe;color:#1677d2}.space-list small{color:#84909d}
+.table-search{border:1px solid #d5dfe9;background:#f8fafc;color:#8793a0}.table-search input{color:#253242}.table-wrap{padding:0 12px 10px}th{background:#f5f8fb;color:#5f6d7c;border-bottom:1px solid #dfe6ee}td{border-bottom:1px solid #edf1f5;color:#5c6875}td:first-child{color:#253242}.file-type{color:#1677d2;background:#e9f4fe}
+.status-tag.success{background:#e9f7f2;color:#138a66;border-color:#b8e5d6}.status-tag.pending{background:#fff7e8;color:#a96e0c;border-color:#efd9a9}.status-tag.failed{background:#fdeeee;color:#cb3f3f;border-color:#f2c0c0}
+.assistant-summary{background:#fff;border:1px solid #dfe6ee;border-radius:5px}.assistant-summary>div>span{background:#eaf4fe;color:#1677d2;border-radius:6px}.assistant-summary p,.assistant-summary li{color:#748190}.assistant-summary li{border-left-color:#e2e8ef}.assistant-summary svg{color:#1677d2}
+.customer-question small{color:#8794a1}.customer-question p{background:#f5f8fb;border-color:#dce5ee;color:#344354}.alarm-preview{background:#fff7f7;border-color:#efc5c5;color:#cf4141}.alarm-preview em{background:#d64545}.question-box textarea,.chat-panel>footer textarea,.dispatch-panel textarea{background:#fff;border:1px solid #cfd9e4;color:#253242}.question-box footer button{color:#617386}.empty-answer{color:#95a1ad}.empty-answer b{color:#536273}
+.confidence-row{background:#eef9f5;border-color:#c0e5d7;color:#128d69}.confidence-row p{color:#679488}.answer-content p,.answer-content ol{color:#526171}.answer-content h3{border-left-color:#1677d2}.answer-buttons{border-top-color:#e4eaf0}
+.citation{border-color:#d9e4ee;background:#f7fafe}.citation>i{background:#1677d2}.citation small{color:#1677d2}.citation p{color:#657382;border-top-color:#e0e8f0}.debug-box{border-top-color:#e1e8ef}.debug-box p{color:#778592}
+.service-kpis>div{background:#fff;border:1px solid #dfe6ee}.service-kpis svg{color:#1677d2}.service-kpis span{color:#74818e}.service-kpis strong{color:#253242}.service-kpis em{color:#159b73}
+.session-list nav button{border:1px solid #d7e0e9;background:#f7f9fb;color:#667483}.session-list nav button.active{background:#eaf4fe;color:#0869bf;border-color:#acd2f4}.session-list nav b{background:#dcecfb}.session{border-top-color:#edf1f5}.session.active{background:#edf6ff;box-shadow:inset 3px 0 #1677d2}.session small,.session em{color:#7e8b98}
+.messages{background:#f5f7fa}.messages>small{color:#8794a1}.incoming p,.outgoing p{border-color:#d9e2eb;background:#fff;color:#334252}.outgoing p{background:#e6f2fd;border-color:#b7d8f5}.outgoing small{color:#6e8498}.attachment{background:#fff5f5!important;color:#d34646}.chat-panel>footer{border-top-color:#e1e8ef}
+.customer-profile,.diagnosis-card{background:#f8fafc;border-color:#dfe6ee}.customer-profile span,.diagnosis-card span{color:#74818e}.risk-card{background:#fff2f2;border-color:#efc0c0;color:#c93e3e}.risk-card small{color:#9f6969}.diagnosis-card>small{border-top-color:#e1e8ef;color:#687684}
+.order-title,.sla-card{background:#fff;border-color:#dfe6ee}.order-title h2{color:#253242}.order-title p,.order-summary dt{color:#7b8794}.critical{background:#d64545;border-radius:3px}.diagnostic-items{border-top-color:#e1e8ef}.sla-card header{color:#5f6f80}.sla-card p{color:#74818e}.sla-card>i{background:#eef1f4}
+.process-steps>div:not(:last-child):after{background:#d7e1ea}.process-steps i{background:#fff;border-color:#c7d3df;color:#6f7c89}.process-steps .done i{background:#1677d2;border-color:#1677d2;color:#fff}.process-steps .active i{background:#fff1f1;border-color:#d64545;color:#d64545}.process-steps b{color:#778492}.process-steps .active b{color:#d64545}
+.timeline>div:after{background:#d9e2eb}.timeline>div>i{background:#1677d2}.timeline p,.timeline small{color:#778492}.dispatch-unit{background:#f5f9fd;border-color:#d5e3ef}.dispatch-unit>i{background:#e5f2fd;color:#1677d2}.dispatch-unit small,.dispatch-panel ol{color:#6f7c89}
+.review{border-color:#dfe6ee}.review>i.good{background:#e9f7f2;color:#138a66}.review>i.normal{background:#fff6e4;color:#ad7210}.review>i.bad{background:#fdeeee;color:#ca4141}.review p{color:#71808e}.follow-up{background:#fff8e9;border-color:#ecd49e;color:#a56b0c}.follow-up small{color:#957d51}
+.toast{background:#fff;border:1px solid #cfe4dc;border-left:4px solid #159b73;color:#304354;box-shadow:0 12px 30px rgba(31,54,77,.16)}.toast button{color:#72808d}
+.green-text{color:#138f69!important}.red-text{color:#d14242!important}.amber-text{color:#b77911!important}
+::-webkit-scrollbar-track{background:#f1f4f7}::-webkit-scrollbar-thumb{background:#c7d1dc;border-radius:6px}
+@media(max-width:900px){.app-shell,.app-shell.collapsed{grid-template-columns:70px minmax(0,1fr)}.sidebar,.collapsed .sidebar{width:70px}.telecom-logo{width:38px;object-fit:cover;object-position:left}.topbar{grid-template-columns:1fr auto}}

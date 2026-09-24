@@ -60,21 +60,21 @@ const documents = [
 ];
 const filteredDocuments = computed(() => documents.filter(doc => doc[0].includes(documentQuery.value) || doc[1].includes(documentQuery.value)));
 
-const axis = { axisLine: { lineStyle: { color: "#2d4963" } }, axisTick: { show: false }, axisLabel: { color: "#8da7be", fontSize: 11 } };
+const axis = { axisLine: { lineStyle: { color: "#d9e2ec" } }, axisTick: { show: false }, axisLabel: { color: "#6b7785", fontSize: 11 } };
 const trendOption: EChartsOption = {
-  tooltip: { trigger: "axis", backgroundColor: "#132a3e", borderColor: "#3a5b73", textStyle: { color: "#e8f1f8" } },
-  legend: { right: 12, top: 2, textStyle: { color: "#9bb0c2" }, itemWidth: 14 },
+  tooltip: { trigger: "axis", backgroundColor: "#ffffff", borderColor: "#d9e2ec", textStyle: { color: "#253242" } },
+  legend: { right: 12, top: 2, textStyle: { color: "#5f6b78" }, itemWidth: 14 },
   grid: { left: 44, right: 18, top: 42, bottom: 28 },
   xAxis: { type: "category", data: ["09/18","09/19","09/20","09/21","09/22","09/23","今日"], ...axis },
-  yAxis: { type: "value", splitLine: { lineStyle: { color: "#213c52" } }, ...axis },
+  yAxis: { type: "value", splitLine: { lineStyle: { color: "#edf1f5" } }, ...axis },
   series: [
     { name: "服务总量", type: "line", smooth: true, symbolSize: 6, data: [2380,2720,2490,3080,2840,3190,3286], lineStyle: { color: "#4aa3e8", width: 2 }, itemStyle: { color: "#4aa3e8" }, areaStyle: { color: "rgba(74,163,232,.12)" } },
     { name: "机器人解决", type: "line", smooth: true, symbolSize: 6, data: [1610,1870,1710,2180,2010,2260,2347], lineStyle: { color: "#44c2a3", width: 2 }, itemStyle: { color: "#44c2a3" } },
   ],
 };
 const channelOption: EChartsOption = {
-  tooltip: { trigger: "item" }, legend: { orient: "vertical", right: 0, top: "center", textStyle: { color: "#a5b8c9" } },
-  series: [{ type: "pie", radius: ["48%","70%"], center: ["34%","50%"], avoidLabelOverlap: true, label: { show: false }, itemStyle: { borderColor: "#10273a", borderWidth: 3 }, data: [
+  tooltip: { trigger: "item" }, legend: { orient: "vertical", right: 0, top: "center", textStyle: { color: "#5f6b78" } },
+  series: [{ type: "pie", radius: ["48%","70%"], center: ["34%","50%"], avoidLabelOverlap: true, label: { show: false }, itemStyle: { borderColor: "#ffffff", borderWidth: 3 }, data: [
     { value: 36, name: "网页客服", itemStyle: { color: "#4a9fe3" } }, { value: 28, name: "微信服务号", itemStyle: { color: "#42b99a" } },
     { value: 21, name: "企业微信", itemStyle: { color: "#7f78c7" } }, { value: 15, name: "语音转写", itemStyle: { color: "#d5a24a" } },
   ]}],
@@ -95,8 +95,7 @@ function advanceOrder() { orderStage.value = Math.min(5, orderStage.value + 1); 
   <div class="app-shell" :class="{ collapsed }">
     <aside class="sidebar">
       <div class="brand">
-        <div class="telecom-symbol"><i></i><b></b></div>
-        <div v-if="!collapsed" class="brand-name"><strong>中国电信</strong><small>CHINA TELECOM</small></div>
+        <img class="telecom-logo" src="/china-telecom-logo.png" alt="中国电信 China Telecom" />
       </div>
       <nav class="main-nav">
         <button v-for="item in navItems" :key="item.key" :class="{ active: page === item.key }" @click="go(item.key)">
