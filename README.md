@@ -32,7 +32,7 @@
 
 ## 本地运行
 
-环境要求：Node.js 22.13 或更高版本。
+环境要求：Node.js 20.19 或更高版本。
 
 ```bash
 npm install
@@ -51,11 +51,12 @@ npm run build
 ## 项目结构
 
 ```text
-app/                 页面与全局样式
-components/ui/       通用界面组件
+src/App.vue          主应用、业务页面与交互状态
+src/components/      ECharts 等可复用 Vue 组件
+src/styles.css       全局设计系统与响应式样式
 docs/                开发说明书与测试方案
 public/              静态资源
-scripts/             构建和运行脚本
+vite.config.ts       Vite 构建配置
 ```
 
 ## 文档
@@ -65,7 +66,7 @@ scripts/             构建和运行脚本
 
 ## 当前集成状态
 
-当前版本为可交互前端演示，CRM、综合网管、邮件和大模型调用采用 Mock 数据。生产接入应通过后端适配层完成，并遵循权限、脱敏、审计和幂等要求。
+当前版本采用 Vue 3、TypeScript、Vite 和 ECharts，是可交互前端演示。CRM、综合网管、邮件和大模型调用采用 Mock 数据。生产接入应通过后端适配层完成，并遵循权限、脱敏、审计和幂等要求。
 
 ## License
 
